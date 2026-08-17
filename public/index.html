@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaint Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Apartment Complaint System</h1>
+
+<form id="form">
+
+    <input id="name" placeholder="Resident Name" required>
+
+    <input id="room" placeholder="Room/Flat Number" required>
+
+    <select id="category" required>
+        <option value="">Select Category</option>
+        <option>Electricity</option>
+        <option>Plumbing</option>
+        <option>Water</option>
+        <option>Internet</option>
+        <option>Maintenance</option>
+    </select>
+
+    <textarea id="description"
+        placeholder="Describe the complaint"
+        required></textarea>
+
+    <button type="submit">Submit Complaint</button>
+
+</form>
+
+<h2>Complaints</h2>
+
+<input id="search" placeholder="Search by category">
+
+<div id="list"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
